@@ -1,4 +1,9 @@
-source ~/git-completion.bash
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
 ##########################################
 # colored prompt
@@ -15,7 +20,6 @@ fi
 W="\e[0m"
 R="\e[0;31m"
 
-
 # Display current git branch in PS1
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
@@ -24,7 +28,7 @@ PS1="\n\[$B\]┌──\[$W\][ \[$Y\]\@ \[$W\]]\[$B\]───\[$W\][ \[$G\]\u\[$
 PS2="  \[$Y\]> \[$W\]"
 
 alias ..="cd .."
-alias colors="bash $HOME/.colors"
-alias css="cd $HOME/git/saver-sam"
-export PATH="$HOME/.yarn/bin:$PATH"
+alias ls='ls -lAhF --color=auto'
+alias edit-lightdm-greeter='sudo vim /etc/lightdm/lightdm-webkit2-greeter.conf'
+alias edit-lightdm-icon='sudo vim /var/lib/AccountsService/users/kevdez'
 
