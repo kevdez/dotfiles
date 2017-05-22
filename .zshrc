@@ -57,17 +57,23 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# path to z.sh to user the z tool
+. /home/kevdez/.oh-my-zsh/z.sh
+
+# add npm executables to the PATH
+export PATH="$PATH:/home/kevdez/.npm-global/bin"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
