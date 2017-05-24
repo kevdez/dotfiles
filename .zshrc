@@ -60,8 +60,11 @@ source $ZSH/oh-my-zsh.sh
 # path to z.sh to user the z tool
 . /home/kevdez/.oh-my-zsh/z.sh
 
-# add npm executables to the PATH
+# add npm binaries to PATH
 export PATH="$PATH:/home/kevdez/.npm-global/bin"
+
+# add rust binaries to PATH
+export PATH="$PATH:/home/kevdez/.cargo/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
