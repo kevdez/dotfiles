@@ -44,3 +44,12 @@ rm -rf fonts
 ```
 
 Then choose a cool font like `Inconsolata`
+
+6. Download the `peaksea` theme for vim:
+
+```
+git clone https://github.com/vim-scripts/peaksea ./peaksea
+mkdir -p ~/.vim/colors
+mv peaksea/colors/peaksea.vim ~/.vim/colors/
+rm -rf peaksea
+```
