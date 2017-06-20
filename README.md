@@ -53,3 +53,10 @@ mkdir -p ~/.vim/colors
 mv peaksea/colors/peaksea.vim ~/.vim/colors/
 rm -rf peaksea
 ```
+
+7. Download the 'luna' theme from vim airline themes
+
+```
+git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
+```
+Be sure to run `:Helptags` to generate help tags
