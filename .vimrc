@@ -15,6 +15,12 @@ set shiftwidth=2
 :set autoindent
 :set smartindent
 
+" Shortcut to rapidly toggle `set list` with '\l'
+nmap <leader>l :set list!<CR>
+
+" Highlight tabs, eol, and spaces
+set listchars=tab:⨠\ ,eol:¬,space:·
+
 " vim-javascript 
 let g:javascript_plugin_jsdoc = 1
 
@@ -26,8 +32,14 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-
+let g:syntastic_enable_highlighting = 1
+let g:syntastic_enable_signs = 1
+highlight SyntasticErrorLine guibg=#550000
+highlight SyntasticWarningLine guibg=#331d1e
 let g:syntastic_javascript_checkers = ['eslint']
+
+" eslint_d 
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep = '▶'
