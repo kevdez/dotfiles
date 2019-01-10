@@ -59,4 +59,10 @@ rm -rf peaksea
 ```
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 ```
+
+8. Download RainbowParentheses
+```
+git clone https://github.com/kien/rainbow_parentheses.vim ~/.vim/bundle/rainbow_parentheses
+```
+
 Be sure to run `:Helptags` to generate help tags
