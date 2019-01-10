@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/kevdez/.oh-my-zsh
+  export ZSH=/PATH/TO/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,14 +57,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# path to z.sh to user the z tool
-. /home/kevdez/.oh-my-zsh/z.sh
+# path to z.sh to use the z tool from https://github.com/rupa/z
+#. /PATH/TO/.oh-my-zsh/z.sh
 
 # add npm binaries to PATH
-export PATH="$PATH:/home/kevdez/.npm-global/bin"
+# export PATH="$PATH:/home/kevdez/.npm-global/bin"
 
 # add rust binaries to PATH
-export PATH="$PATH:/home/kevdez/.cargo/bin"
+# export PATH="$PATH:/home/kevdez/.cargo/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
