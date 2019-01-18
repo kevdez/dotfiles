@@ -60,12 +60,6 @@ source $ZSH/oh-my-zsh.sh
 # path to z.sh to use the z tool from https://github.com/rupa/z
 #. /PATH/TO/.oh-my-zsh/z.sh
 
-# add npm binaries to PATH
-# export PATH="$PATH:/home/kevdez/.npm-global/bin"
-
-# add rust binaries to PATH
-# export PATH="$PATH:/home/kevdez/.cargo/bin"
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -75,7 +69,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
