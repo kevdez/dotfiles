@@ -1,4 +1,53 @@
-# My Dotfiles
+# Things to install in a new OS (and dotfiles):
+
+Install Clippy:
+https://clipy-app.com/
+
+Install Homebrew for Mac:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install zsh, tmux, NeoVim, ripgrep (needed for NVChad)
+```
+brew install zsh ripgrep nvim tmux
+```
+Install TPM, tmux plugin manager:
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+Install Oh My ZSH:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Install NVM - Node Version Manager:
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+```
+
+Install Rust:
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+Install my own Zsh PS1:
+```
+git clone https://github.com/kevdez/so-extra-zsh-theme.git so-extra && \
+cd $_ && \
+mv so-extra.zsh-theme ~/.oh-my-zsh/themes/ && \
+cd .. && \
+rm -rf so-extra
+```
+and make the `.zshrc` theme be `ZSH_THEME="so-extra"`
+
+Clone my NeoVim configs (based off of NVChad):
+```
+git clone https://github.com/kevdez/my-nvim-configs.git ~/.config/nvim
+```
+
+
 
 Plugins needed to run `.vimrc`:
 
