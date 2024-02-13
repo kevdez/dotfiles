@@ -1,4 +1,11 @@
 # Things to install in a new OS (and dotfiles):
+Install Iterm2:
+https://iterm2.com/
+
+Set up new SSH ID:
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
 
 Install Clippy:
 https://clipy-app.com/
